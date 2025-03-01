@@ -42,3 +42,11 @@ document.getElementById('qs-part').addEventListener('click', function(event){
     event.preventDefault();
     window.location.href = './second.html'
 })
+
+
+// back button
+
+document.getElementById('back-btn').addEventListener('click', function(){
+    
+    console.log('hi')
+})
