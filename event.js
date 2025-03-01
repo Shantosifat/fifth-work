@@ -24,7 +24,7 @@ buttons.forEach(button => {
         const timeString = currentTime.toLocaleTimeString();
         p.innerText = `
         You have completed the task at ${timeString}`;
-        container.appendChild(p)
+        container.appendChild(p);
     });
 });
 
@@ -44,9 +44,6 @@ document.getElementById('qs-part').addEventListener('click', function(event){
 })
 
 
+
 // back button
 
-document.getElementById('back-btn').addEventListener('click', function(){
-    
-    console.log('hi')
-})
