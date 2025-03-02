@@ -48,12 +48,7 @@ buttons.forEach(button => {
 
 
 
-document.getElementsByClassName('taskButton').addEventListener('')
-// const decreaseP = document.getElementById("decrease-p").innerText;
-//         const convertedDecrease = parseInt(decreaseP);
-// if (convertedDecrease === 0){
-//     alert('babe')
-// }
+
 
 
 // clear history
