@@ -1,24 +1,37 @@
-let completedTasks = 0;
+// let completedTasks = 0;
 
 const buttons = document.querySelectorAll('.complete-btn');
 
 buttons.forEach(button => {
     button.addEventListener('click', function(event) {
-        event.preventDefault();
-        alert('Board Updated Successfully');
+        event.preventDefault(event);
+        // alert('Board Updated Successfully');
 
-        
+        const titleName = document.getElementsByClassName('taskButton').innerText;
+        // console.log(titleName)
+        // for(let i = 0; i < titleName.length; i++){
+        //     console.log(titleName[i].innerText);
+        // }
         const increaseP = document.getElementById("increase-p").innerText;
         const convertedIncrease = parseInt(increaseP);
         const decreaseP = document.getElementById("decrease-p").innerText;
         const convertedDecrease = parseInt(decreaseP);
 
+        
+
         const sum1 = convertedIncrease + 1;
         const sum2 = convertedDecrease - 1;
         document.getElementById('increase-p').innerText = sum1
         document.getElementById('decrease-p').innerText = sum2;
+
+        // challage-4
+        if (sum2 === 0){
+            alert('babe')
+        }
         button.disabled = true;
         button.style.backgroundColor = '#94a3b8';
+
+       
         
 
         const container = document.getElementById('activity-container')
@@ -28,9 +41,19 @@ buttons.forEach(button => {
         p.innerText = `
         You have completed the task  at ${timeString}`;
         container.appendChild(p);
-    
+
+         
     });
 });
+
+
+
+document.getElementsByClassName('taskButton').addEventListener('')
+// const decreaseP = document.getElementById("decrease-p").innerText;
+//         const convertedDecrease = parseInt(decreaseP);
+// if (convertedDecrease === 0){
+//     alert('babe')
+// }
 
 
 // clear history
