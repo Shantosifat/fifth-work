@@ -45,5 +45,23 @@ document.getElementById('qs-part').addEventListener('click', function(event){
 
 
 
-// back button
+// challange part-1
 
+function randomColor(){
+    document.body.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+}
+
+// document.getElementById('theme-button').addEventListener('click', function randomColor(){
+//     document.body.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+// })
+
+const button = document.getElementById('theme-button');
+button.addEventListener('click', randomColor)
+
+// function changeColor() {
+//     document.body.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+//   }
+  
+//   // Adding event listener to the button
+//   const button = document.getElementById('colorButton');
+//   button.addEventListener('click', changeColor);
