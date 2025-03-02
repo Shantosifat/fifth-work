@@ -5,7 +5,7 @@ const buttons = document.querySelectorAll('.complete-btn');
 buttons.forEach(button => {
     button.addEventListener('click', function(event) {
         event.preventDefault(event);
-        // alert('Board Updated Successfully');
+        alert('Board Updated Successfully');
 
         const titleName = document.getElementsByClassName('taskButton').innerText;
         // console.log(titleName)
@@ -26,7 +26,7 @@ buttons.forEach(button => {
 
         // challage-4
         if (sum2 === 0){
-            alert('babe')
+            alert('You have Completed all the tasks. Congratulations!!!!')
         }
         button.disabled = true;
         button.style.backgroundColor = '#94a3b8';
