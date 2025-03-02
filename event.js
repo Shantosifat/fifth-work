@@ -1,3 +1,5 @@
+let completedTasks = 0;
+
 const buttons = document.querySelectorAll('.complete-btn');
 
 buttons.forEach(button => {
@@ -17,14 +19,16 @@ buttons.forEach(button => {
         document.getElementById('decrease-p').innerText = sum2;
         button.disabled = true;
         button.style.backgroundColor = '#94a3b8';
+        
 
         const container = document.getElementById('activity-container')
         const p = document.createElement("p");
         const currentTime = new Date();
         const timeString = currentTime.toLocaleTimeString();
         p.innerText = `
-        You have completed the task at ${timeString}`;
+        You have completed the task  at ${timeString}`;
         container.appendChild(p);
+    
     });
 });
 
@@ -66,6 +70,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('todays-date').textContent = dateString;
   });
+
+
+//   challange-4
+
+// let completedTasks = 0;
+
+// // Function to handle task completion
+// function completeTask(taskNumber) {
+//   // Increment completed tasks counter
+//   completedTasks++;
+
+//   // Update the task status message
+// //   document.getElementById('taskStatus').textContent = `You have completed ${completedTasks} out of 6 tasks.`;
+
+//   // Check if all tasks are completed
+//   if (completedTasks === 6) {
+//     alert("Congratulations! You have completed all tasks!");
+//   }
+// }
+
+// if(convertedDecrease === 0 && convertedIncrease === 30){
+//     console.log('noooo')
+//  }
+//  else{
+     
+//  }
+
+
+
+// challange-3
+
+
 
 
 
